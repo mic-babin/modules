@@ -3,23 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FeatureModule } from './feature/feature.module';
 
 @NgModule({
-  declarations: [
-    // Components, pipes and custom directives
-    AppComponent,
-  ],
-  imports: [
-    // Other modules
-    BrowserModule,
-    AppRoutingModule,
-  ],
-  providers: [
-    // Services and guards
-  ],
-  bootstrap: [
-    // Component loaded at start of the application
-    AppComponent,
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, FeatureModule],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
